@@ -1,0 +1,39 @@
+GET http://localhost:8080/hello
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-02T045517.200.txt
+
+###
+POST http://localhost:8080/pledges
+Content-Type: application/json
+
+{
+  "name": "Honest Harry",
+  "statement": "Oh yeah"
+}
+
+<> 2019-02-02T050121.200.json
+<> 2019-02-02T050117.200.json
+<> 2019-02-02T045628.404.json
+
+###
+
+GET http://localhost:8080/pledges
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/wow
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/pledges/2
+Accept: */*
+Cache-Control: no-cache
+
+###
+
